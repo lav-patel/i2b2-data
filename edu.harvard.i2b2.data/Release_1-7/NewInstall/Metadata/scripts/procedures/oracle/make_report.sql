@@ -1,3 +1,5 @@
+set echo on;
+alter session set current_schema=bhmetadataa1;
 -- Build the totalnum report in the totalnum_report table
 -- Uses the most recent value for each path name in the totalnum table, and obfuscates with the specified censoring threshold and Gaussian sigma
 -- e.g., to censor counts under ten and add Gaussian noise with a sigma of 2.8 - exec BuildTotalnumReport 9, 2.8

@@ -1,3 +1,5 @@
+set echo on;
+alter session set current_schema=bhmetadataa1;
 -- By Mike Mendis, Partners Healthcare based on SQL Server code by Griffin Weber, MD, PhD at Harvard Medical School
 -- Performance improvements by Jeff Green and Jeff Klann, PhD 03-20
  
@@ -47,7 +49,7 @@ BEGIN
       execute immediate 'drop table ontPatVisitDims';
    end if;
 
- sql_stmt := 'select distinct c_table_name from TABLE_ACCESS where c_visualattributes like ''%A%''  ';
+ sql_stmt := 'select distinct c_table_name from TABLE_ACCESS where c_name like ''ACT%''  ';
  
 
     -- rather than creating cursor and fetching rows into local variables, instead using record variable type to 

@@ -1,3 +1,5 @@
+set echo on;
+alter session set current_schema=bhmetadataa1;
 -- To run this separately from run_all_counts, follow this example, substituting your local parameters:
 --DECLARE errorMsg VARCHAR2(700);
 --begin

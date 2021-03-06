@@ -1,3 +1,5 @@
+set echo on;
+alter session set current_schema=bhmetadataa1;
 create or replace PROCEDURE                 pat_count_visits  (metadataTable IN VARCHAR, schemaName IN VARCHAR, 
    errorMsg OUT VARCHAR)
 IS
@@ -112,7 +114,7 @@ sql_stmt := sql_stmt || dis_c_operator  || ' ' || '''' || replace(dis_c_dimcode,
                      || ' ) ' -- set
                      || ' where c_fullname = ' || '''' || dis_c_fullname || '''' 
                      || ' and numpats is null';
-
+        DBMS_OUTPUT.PUT_LINE(sql_stmt);
          execute immediate sql_stmt;
         --   DBMS_OUTPUT.PUT_LINE(sql_stmt);
 	--	else
