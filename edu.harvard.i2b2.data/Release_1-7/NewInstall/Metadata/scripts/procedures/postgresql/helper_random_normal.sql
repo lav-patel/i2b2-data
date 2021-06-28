@@ -1,3 +1,4 @@
+SET ROLE fh_phi_admin;
 -- https://bugfactory.io/blog/generating-random-numbers-according-to-a-continuous-probability-distribution-with-postgresql/
 
 -- generates one normally distributed random number

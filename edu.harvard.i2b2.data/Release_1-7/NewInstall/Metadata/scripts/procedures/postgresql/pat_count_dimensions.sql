@@ -1,4 +1,4 @@
-
+SET ROLE fh_phi_admin;
 
 -- By Mike Mendis, Partners Healthcare
 -- Performance improvements by Jeff Green, Prognosis Data Corp; Jeff Klann, PhD; and Griffin Weber, MD, PhD

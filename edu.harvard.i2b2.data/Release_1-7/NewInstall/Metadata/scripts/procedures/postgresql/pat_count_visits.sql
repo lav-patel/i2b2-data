@@ -1,3 +1,4 @@
+SET ROLE fh_phi_admin;
 -----------------------------------------------------------------------------------------
 -- pat_visit_counts(tabname)
 -- DISCLAIMER: assumes that the default value for missing sex_cd is lower('not recorded')
