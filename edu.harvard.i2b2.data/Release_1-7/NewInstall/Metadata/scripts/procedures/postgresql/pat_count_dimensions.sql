@@ -1,4 +1,6 @@
 SET ROLE fh_phi_admin;
+-- numeric(22,0) is not compatible with code.
+ALTER TABLE fh_export_i2b2_metadata.fh_meta_meds ALTER COLUMN c_hlevel TYPE numeric USING c_hlevel::numeric;
 
 -- By Mike Mendis, Partners Healthcare
 -- Performance improvements by Jeff Green, Prognosis Data Corp; Jeff Klann, PhD; and Griffin Weber, MD, PhD
