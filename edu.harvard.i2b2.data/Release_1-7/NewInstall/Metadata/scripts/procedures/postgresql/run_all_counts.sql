@@ -1,3 +1,5 @@
+SET ROLE fh_phi_admin;
+SET search_path to 'fh_export_i2b2_metadata','public';
 -----------------------------------------------------------------------------------------------------------------
 -- Function to run totalnum counts on all tables in table_access 
 -- 6/8/2016 - modified for PostgreSQL by Dan Vianello, Center for Biomedical Informatics, Washington University in St. Louis
@@ -83,3 +85,5 @@ end;
 $BODY$
   LANGUAGE plpgsql VOLATILE SECURITY DEFINER
   COST 100;
+ 
+select runtotalnum('observation_fact','fh_export_i2b2_crc');
